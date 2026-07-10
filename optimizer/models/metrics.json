@@ -1,0 +1,26 @@
+{
+  "train": {
+    "mae": 5581.3404375,
+    "rmse": 7334.306574272179,
+    "mape": 0.7725247365756407
+  },
+  "val": {
+    "mae": 48911.4090625,
+    "rmse": 61650.443656143994,
+    "mape": 6.007321625152533
+  },
+  "model_config": {
+    "type": "XGBRegressor",
+    "feature_count": 114,
+    "n_species": 110,
+    "n_train_samples": 500,
+    "n_val_samples": 100,
+    "field_size_m": [
+      60.0,
+      40.0
+    ],
+    "polygon_pts": 7,
+    "model_path": "C:\\Users\\rasmu\\FoodPlan Project\\FarmPlan-Test-Data\\optimizer\\models\\calorie_scoring_model.json",
+    "metadata_path": "C:\\Users\\rasmu\\FoodPlan Project\\FarmPlan-Test-Data\\optimizer\\models\\calorie_scoring_model.meta.json"
+  }
+}

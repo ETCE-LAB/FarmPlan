@@ -1,0 +1,413 @@
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+
+.field-creation-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-map-area {
+  position: relative;
+  border-radius: var(--radius, 8px);
+  overflow: hidden;
+  border: 1px solid var(--panel-border);
+}
+
+.field-map {
+  width: 100%;
+  height: 520px;
+}
+
+/* ── Floating hint ───────────────────────────────────────────────────────── */
+
+.field-map-hint {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 800;
+}
+
+/* ── Properties panel (floats over the map) ─────────────────────────────── */
+
+.field-props-panel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 280px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-direction: column;
+  max-height: 494px;
+  z-index: 1000;
+}
+
+.field-props-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--heading-main);
+  border-bottom: 1px solid var(--panel-divider);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 0 2px;
+  line-height: 1;
+}
+.close-btn:hover { color: var(--text-main); }
+
+.field-props-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-props-body label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.field-props-body label input,
+.field-props-body label select,
+.field-props-body label textarea {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-size: 13px;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field-props-body label input:focus,
+.field-props-body label select:focus,
+.field-props-body label textarea:focus {
+  border-color: var(--farm-green-main);
+}
+
+.req { color: var(--danger-text); margin-left: 2px; }
+
+.fp-error {
+  margin: 0;
+  font-size: 11px;
+  color: var(--danger-text);
+}
+
+/* irrigated toggle */
+.fp-irrigated-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.fp-toggle-group {
+  display: flex;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.fp-toggle-btn {
+  padding: 4px 14px;
+  font-size: 12px;
+  background: var(--input-bg);
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+}
+.fp-toggle-btn + .fp-toggle-btn {
+  border-left: 1px solid var(--input-border);
+}
+.fp-toggle-btn.active {
+  background: var(--farm-green-main);
+  color: #fff;
+}
+
+/* metrics row */
+.fp-metrics {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--surface-alt);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+/* edit shape button */
+.fp-edit-shape-btn {
+  width: 100%;
+  padding: 7px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px dashed var(--panel-border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.fp-edit-shape-btn:hover,
+.fp-edit-shape-btn.active {
+  border-color: var(--farm-green-main);
+  color: var(--farm-green-main);
+  background: var(--farm-green-soft);
+}
+
+/* footer */
+.field-props-footer {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px 12px;
+  border-top: 1px solid var(--panel-divider);
+}
+
+.fp-danger-btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--danger-border);
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  cursor: pointer;
+}
+
+.fp-secondary-btn {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--panel-border);
+  background: transparent;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.fp-primary-btn {
+  flex: 2;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--farm-green-main);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+.fp-primary-btn:hover { opacity: 0.88; }
+
+/* ── Saved fields list ───────────────────────────────────────────────────── */
+
+.field-list-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 0;
+}
+
+.field-list-farm-name {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.empty-state {
+  padding: 20px 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.field-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.field-list-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--panel-divider);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.field-list-item:last-child { border-bottom: none; }
+.field-list-item:hover { background: var(--surface-alt); }
+.field-list-item.selected { background: var(--farm-green-soft); }
+
+.field-list-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--heading-main);
+  margin-bottom: 4px;
+}
+
+.field-list-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.field-badge {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.field-badge.crop {
+  background: var(--farm-green-soft);
+  color: var(--farm-green-main);
+}
+.field-badge.soil {
+  background: rgba(121,85,72,0.1);
+  color: #795548;
+}
+.field-badge.irrigated {
+  background: rgba(33,150,243,0.1);
+  color: #1565c0;
+}
+
+.field-list-stats {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── Leaflet tooltip overrides ───────────────────────────────────────────── */
+
+.farm-tooltip,
+.field-tooltip {
+  background: var(--panel-bg) !important;
+  border: 1px solid var(--panel-border) !important;
+  color: var(--text-main) !important;
+  font-size: 12px !important;
+  border-radius: 4px !important;
+  padding: 3px 8px !important;
+  box-shadow: none !important;
+}
+/* ── Search bar on map ───────────────────────────────────────────────────── */
+
+.field-search-bar {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: min(480px, 90%);
+}
+
+.field-search-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.field-search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--text-main);
+  outline: none;
+  min-width: 0;
+}
+
+.field-search-bar input::placeholder {
+  color: var(--text-muted);
+}
+
+.field-search-btn {
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--panel-border);
+  background: var(--farm-green-main);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+
+.field-search-btn:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.field-search-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.field-search-feedback {
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  z-index: 1000;
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.field-search-feedback.success {
+  background: var(--farm-green-soft);
+  color: var(--farm-green-main);
+  border: 1px solid var(--farm-green-main);
+}
+
+.field-search-feedback.error {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border: 1px solid var(--danger-border);
+}
+
+/* Spin animation for loader */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

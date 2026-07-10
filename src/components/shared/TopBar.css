@@ -1,0 +1,128 @@
+.top-bar {
+  background: var(--panel-bg, #ffffff);
+  height: 65px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.search-box {
+  background: color-mix(in srgb, var(--panel-bg) 86%, var(--farm-green-main) 14%);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+
+.search-box-icon {
+  color: var(--text-muted);
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  width: 100%;
+  color: var(--text-main);
+}
+
+.search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.top-bar-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-meta {
+  text-align: right;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.profile-org {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.profile-avatar {
+  background: var(--farm-green-soft);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--farm-green-dark);
+}
+
+@media (max-width: 760px) {
+  .top-bar {
+    padding: 0 14px;
+  }
+
+  .search-box {
+    width: 48%;
+    min-width: 160px;
+  }
+}
+
+.language-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-muted {
+  color: #64748b; /* Subtle gray for the globe icon */
+}
+
+.language-toggle-pill {
+  display: flex;
+  background-color: #f1f5f9; /* Light gray pill background */
+  border-radius: 20px;
+  padding: 4px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  color: #0f172a;
+}
+
+.toggle-btn.active {
+  background-color: #ffffff;
+  color: #0f172a; /* Dark text for active state */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Nice pop-out shadow */
+}
+
+/* Dark mode overrides (If your app uses a .dark class on the body/html) */
+:root[data-theme='dark'] .language-toggle-pill,
+.dark .language-toggle-pill {
+  background-color: #1e293b;
+}
+
+:root[data-theme='dark'] .toggle-btn.active,
+.dark .toggle-btn.active {
+  background-color: #334155;
+  color: #f8fafc;
+}

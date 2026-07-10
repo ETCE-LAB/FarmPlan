@@ -1,0 +1,834 @@
+[
+  {
+    "species_id": "T26",
+    "german_name": "Hickory Schindel-Hickory",
+    "english_name": "Shagbark hickory",
+    "strata": "Emergent canopy",
+    "calories_kcal": 131350.0,
+    "spacing_m": 10.0,
+    "position_m": {
+      "x": 56.75,
+      "y": 32.25
+    },
+    "grid_cell": {
+      "x": 113,
+      "y": 64
+    }
+  },
+  {
+    "species_id": "T01",
+    "german_name": "Walnuss",
+    "english_name": "Walnut",
+    "strata": "Emergent canopy",
+    "calories_kcal": 260000.0,
+    "spacing_m": 10.0,
+    "position_m": {
+      "x": 49.75,
+      "y": 19.75
+    },
+    "grid_cell": {
+      "x": 99,
+      "y": 39
+    }
+  },
+  {
+    "species_id": "T01",
+    "german_name": "Walnuss",
+    "english_name": "Walnut",
+    "strata": "Emergent canopy",
+    "calories_kcal": 260000.0,
+    "spacing_m": 10.0,
+    "position_m": {
+      "x": 6.75,
+      "y": 20.25
+    },
+    "grid_cell": {
+      "x": 13,
+      "y": 40
+    }
+  },
+  {
+    "species_id": "T01",
+    "german_name": "Walnuss",
+    "english_name": "Walnut",
+    "strata": "Emergent canopy",
+    "calories_kcal": 260000.0,
+    "spacing_m": 10.0,
+    "position_m": {
+      "x": 12.75,
+      "y": 28.75
+    },
+    "grid_cell": {
+      "x": 25,
+      "y": 57
+    }
+  },
+  {
+    "species_id": "T24",
+    "german_name": "Speierling",
+    "english_name": "Service tree",
+    "strata": "Medium/High tree",
+    "calories_kcal": 39000.0,
+    "spacing_m": 8.0,
+    "position_m": {
+      "x": 35.25,
+      "y": 4.75
+    },
+    "grid_cell": {
+      "x": 70,
+      "y": 9
+    }
+  },
+  {
+    "species_id": "T35",
+    "german_name": "Mostbirne",
+    "english_name": "Perry pear",
+    "strata": "Medium/High tree",
+    "calories_kcal": 71250.0,
+    "spacing_m": 7.0,
+    "position_m": {
+      "x": 27.75,
+      "y": 9.75
+    },
+    "grid_cell": {
+      "x": 55,
+      "y": 19
+    }
+  },
+  {
+    "species_id": "T35",
+    "german_name": "Mostbirne",
+    "english_name": "Perry pear",
+    "strata": "Medium/High tree",
+    "calories_kcal": 71250.0,
+    "spacing_m": 7.0,
+    "position_m": {
+      "x": 46.25,
+      "y": 30.75
+    },
+    "grid_cell": {
+      "x": 92,
+      "y": 61
+    }
+  },
+  {
+    "species_id": "T09",
+    "german_name": "Pappel Hybrid",
+    "english_name": "Hybrid poplar",
+    "strata": "Emergent canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 22.75,
+      "y": 38.25
+    },
+    "grid_cell": {
+      "x": 45,
+      "y": 76
+    }
+  },
+  {
+    "species_id": "T09",
+    "german_name": "Pappel Hybrid",
+    "english_name": "Hybrid poplar",
+    "strata": "Emergent canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 56.25,
+      "y": 11.75
+    },
+    "grid_cell": {
+      "x": 112,
+      "y": 23
+    }
+  },
+  {
+    "species_id": "T09",
+    "german_name": "Pappel Hybrid",
+    "english_name": "Hybrid poplar",
+    "strata": "Emergent canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 39.25,
+      "y": 29.25
+    },
+    "grid_cell": {
+      "x": 78,
+      "y": 58
+    }
+  },
+  {
+    "species_id": "T30",
+    "german_name": "Steineiche",
+    "english_name": "Holm oak",
+    "strata": "High canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 8.75,
+      "y": 3.75
+    },
+    "grid_cell": {
+      "x": 17,
+      "y": 7
+    }
+  },
+  {
+    "species_id": "T30",
+    "german_name": "Steineiche",
+    "english_name": "Holm oak",
+    "strata": "High canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 42.75,
+      "y": 10.75
+    },
+    "grid_cell": {
+      "x": 85,
+      "y": 21
+    }
+  },
+  {
+    "species_id": "T11",
+    "german_name": "Apfel (Halbstamm)",
+    "english_name": "Apple (semi-standard)",
+    "strata": "Medium tree",
+    "calories_kcal": 37500.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 28.75,
+      "y": 36.75
+    },
+    "grid_cell": {
+      "x": 57,
+      "y": 73
+    }
+  },
+  {
+    "species_id": "T11",
+    "german_name": "Apfel (Halbstamm)",
+    "english_name": "Apple (semi-standard)",
+    "strata": "Medium tree",
+    "calories_kcal": 37500.0,
+    "spacing_m": 6.0,
+    "position_m": {
+      "x": 14.75,
+      "y": 13.75
+    },
+    "grid_cell": {
+      "x": 29,
+      "y": 27
+    }
+  },
+  {
+    "species_id": "T13",
+    "german_name": "Pflaume/Zwetschge",
+    "english_name": "Plum/Damson",
+    "strata": "Low/medium tree",
+    "calories_kcal": 23000.0,
+    "spacing_m": 5.0,
+    "position_m": {
+      "x": 21.25,
+      "y": 12.75
+    },
+    "grid_cell": {
+      "x": 42,
+      "y": 25
+    }
+  },
+  {
+    "species_id": "T13",
+    "german_name": "Pflaume/Zwetschge",
+    "english_name": "Plum/Damson",
+    "strata": "Low/medium tree",
+    "calories_kcal": 23000.0,
+    "spacing_m": 5.0,
+    "position_m": {
+      "x": 19.75,
+      "y": 18.75
+    },
+    "grid_cell": {
+      "x": 39,
+      "y": 37
+    }
+  },
+  {
+    "species_id": "T13",
+    "german_name": "Pflaume/Zwetschge",
+    "english_name": "Plum/Damson",
+    "strata": "Low/medium tree",
+    "calories_kcal": 23000.0,
+    "spacing_m": 5.0,
+    "position_m": {
+      "x": 48.25,
+      "y": 6.75
+    },
+    "grid_cell": {
+      "x": 96,
+      "y": 13
+    }
+  },
+  {
+    "species_id": "T07",
+    "german_name": "Feldahorn",
+    "english_name": "Field maple",
+    "strata": "High canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 33.25,
+      "y": 26.25
+    },
+    "grid_cell": {
+      "x": 66,
+      "y": 52
+    }
+  },
+  {
+    "species_id": "T08",
+    "german_name": "Hainbuche",
+    "english_name": "Hornbeam",
+    "strata": "High canopy",
+    "calories_kcal": 0.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 37.75,
+      "y": 36.25
+    },
+    "grid_cell": {
+      "x": 75,
+      "y": 72
+    }
+  },
+  {
+    "species_id": "T20",
+    "german_name": "Kornelkirsche",
+    "english_name": "Cornelian cherry",
+    "strata": "Medium tree",
+    "calories_kcal": 17500.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 24.25,
+      "y": 29.25
+    },
+    "grid_cell": {
+      "x": 48,
+      "y": 58
+    }
+  },
+  {
+    "species_id": "T20",
+    "german_name": "Kornelkirsche",
+    "english_name": "Cornelian cherry",
+    "strata": "Medium tree",
+    "calories_kcal": 17500.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 26.25,
+      "y": 25.75
+    },
+    "grid_cell": {
+      "x": 52,
+      "y": 51
+    }
+  },
+  {
+    "species_id": "T20",
+    "german_name": "Kornelkirsche",
+    "english_name": "Cornelian cherry",
+    "strata": "Medium tree",
+    "calories_kcal": 17500.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 33.25,
+      "y": 16.25
+    },
+    "grid_cell": {
+      "x": 66,
+      "y": 32
+    }
+  },
+  {
+    "species_id": "T22",
+    "german_name": "Holunder (Baumform)",
+    "english_name": "Elder (tree form)",
+    "strata": "Medium tree",
+    "calories_kcal": 21900.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 47.25,
+      "y": 38.75
+    },
+    "grid_cell": {
+      "x": 94,
+      "y": 77
+    }
+  },
+  {
+    "species_id": "T22",
+    "german_name": "Holunder (Baumform)",
+    "english_name": "Elder (tree form)",
+    "strata": "Medium tree",
+    "calories_kcal": 21900.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 22.25,
+      "y": 24.75
+    },
+    "grid_cell": {
+      "x": 44,
+      "y": 49
+    }
+  },
+  {
+    "species_id": "T37",
+    "german_name": "Mandel",
+    "english_name": "Almond",
+    "strata": "Low/medium tree",
+    "calories_kcal": 81000.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 16.25,
+      "y": 2.25
+    },
+    "grid_cell": {
+      "x": 32,
+      "y": 4
+    }
+  },
+  {
+    "species_id": "T37",
+    "german_name": "Mandel",
+    "english_name": "Almond",
+    "strata": "Low/medium tree",
+    "calories_kcal": 81000.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 29.75,
+      "y": 19.75
+    },
+    "grid_cell": {
+      "x": 59,
+      "y": 39
+    }
+  },
+  {
+    "species_id": "T37",
+    "german_name": "Mandel",
+    "english_name": "Almond",
+    "strata": "Low/medium tree",
+    "calories_kcal": 81000.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 36.75,
+      "y": 23.25
+    },
+    "grid_cell": {
+      "x": 73,
+      "y": 46
+    }
+  },
+  {
+    "species_id": "T18",
+    "german_name": "Quitte",
+    "english_name": "Quince",
+    "strata": "Low/medium tree",
+    "calories_kcal": 22500.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 4.25,
+      "y": 9.75
+    },
+    "grid_cell": {
+      "x": 8,
+      "y": 19
+    }
+  },
+  {
+    "species_id": "T18",
+    "german_name": "Quitte",
+    "english_name": "Quince",
+    "strata": "Low/medium tree",
+    "calories_kcal": 22500.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 37.25,
+      "y": 13.25
+    },
+    "grid_cell": {
+      "x": 74,
+      "y": 26
+    }
+  },
+  {
+    "species_id": "T18",
+    "german_name": "Quitte",
+    "english_name": "Quince",
+    "strata": "Low/medium tree",
+    "calories_kcal": 22500.0,
+    "spacing_m": 4.0,
+    "position_m": {
+      "x": 29.25,
+      "y": 30.25
+    },
+    "grid_cell": {
+      "x": 58,
+      "y": 60
+    }
+  },
+  {
+    "species_id": "T25",
+    "german_name": "Feige (harte Sorte)",
+    "english_name": "Fig (hardy cultivar)",
+    "strata": "Low tree",
+    "calories_kcal": 29600.0,
+    "spacing_m": 3.0,
+    "position_m": {
+      "x": 41.75,
+      "y": 39.75
+    },
+    "grid_cell": {
+      "x": 83,
+      "y": 79
+    }
+  },
+  {
+    "species_id": "S31",
+    "german_name": "Mispel-Hecke",
+    "english_name": "Medlar hedge",
+    "strata": "Shrub layer",
+    "calories_kcal": 8800.0,
+    "spacing_m": 2.5,
+    "position_m": {
+      "x": 22.75,
+      "y": 4.75
+    },
+    "grid_cell": {
+      "x": 45,
+      "y": 9
+    }
+  },
+  {
+    "species_id": "S12",
+    "german_name": "Herbstolive",
+    "english_name": "Autumn olive",
+    "strata": "Shrub layer",
+    "calories_kcal": 5000.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 25.25,
+      "y": 18.25
+    },
+    "grid_cell": {
+      "x": 50,
+      "y": 36
+    }
+  },
+  {
+    "species_id": "S12",
+    "german_name": "Herbstolive",
+    "english_name": "Autumn olive",
+    "strata": "Shrub layer",
+    "calories_kcal": 5000.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 5.25,
+      "y": 37.75
+    },
+    "grid_cell": {
+      "x": 10,
+      "y": 75
+    }
+  },
+  {
+    "species_id": "S12",
+    "german_name": "Herbstolive",
+    "english_name": "Autumn olive",
+    "strata": "Shrub layer",
+    "calories_kcal": 5000.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 20.75,
+      "y": 6.75
+    },
+    "grid_cell": {
+      "x": 41,
+      "y": 13
+    }
+  },
+  {
+    "species_id": "P38",
+    "german_name": "Schisandra",
+    "english_name": "Five-flavor berry",
+    "strata": "Climber/liana",
+    "calories_kcal": 1750.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 39.25,
+      "y": 16.75
+    },
+    "grid_cell": {
+      "x": 78,
+      "y": 33
+    }
+  },
+  {
+    "species_id": "P39",
+    "german_name": "Akebie Schokoladenwein",
+    "english_name": "Chocolate vine",
+    "strata": "Climber/liana",
+    "calories_kcal": 1660.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 25.75,
+      "y": 20.25
+    },
+    "grid_cell": {
+      "x": 51,
+      "y": 40
+    }
+  },
+  {
+    "species_id": "P39",
+    "german_name": "Akebie Schokoladenwein",
+    "english_name": "Chocolate vine",
+    "strata": "Climber/liana",
+    "calories_kcal": 1660.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 25.75,
+      "y": 2.75
+    },
+    "grid_cell": {
+      "x": 51,
+      "y": 5
+    }
+  },
+  {
+    "species_id": "P39",
+    "german_name": "Akebie Schokoladenwein",
+    "english_name": "Chocolate vine",
+    "strata": "Climber/liana",
+    "calories_kcal": 1660.0,
+    "spacing_m": 2.0,
+    "position_m": {
+      "x": 17.25,
+      "y": 6.25
+    },
+    "grid_cell": {
+      "x": 34,
+      "y": 12
+    }
+  },
+  {
+    "species_id": "S14",
+    "german_name": "Kulturheidelbeere",
+    "english_name": "Highbush blueberry",
+    "strata": "Shrub layer",
+    "calories_kcal": 2850.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 32.75,
+      "y": 32.25
+    },
+    "grid_cell": {
+      "x": 65,
+      "y": 64
+    }
+  },
+  {
+    "species_id": "P11",
+    "german_name": "Meerkohl",
+    "english_name": "Sea kale",
+    "strata": "Tall herb",
+    "calories_kcal": 480.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 37.25,
+      "y": 17.25
+    },
+    "grid_cell": {
+      "x": 74,
+      "y": 34
+    }
+  },
+  {
+    "species_id": "P05",
+    "german_name": "Topinambur",
+    "english_name": "Jerusalem artichoke",
+    "strata": "Tall herb geophyte",
+    "calories_kcal": 1520.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 38.25,
+      "y": 18.75
+    },
+    "grid_cell": {
+      "x": 76,
+      "y": 37
+    }
+  },
+  {
+    "species_id": "P36",
+    "german_name": "Schwarzwurzel mehrjährig",
+    "english_name": "Black salsify",
+    "strata": "Herb geophyte",
+    "calories_kcal": 1025.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 19.75,
+      "y": 4.25
+    },
+    "grid_cell": {
+      "x": 39,
+      "y": 8
+    }
+  },
+  {
+    "species_id": "P07",
+    "german_name": "Chinesische Artischocke",
+    "english_name": "Chinese artichoke",
+    "strata": "Herb geophyte",
+    "calories_kcal": 260.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 4.75,
+      "y": 35.75
+    },
+    "grid_cell": {
+      "x": 9,
+      "y": 71
+    }
+  },
+  {
+    "species_id": "P32",
+    "german_name": "Wilde Rauke ausdauernd",
+    "english_name": "Perennial arugula",
+    "strata": "Herb",
+    "calories_kcal": 250.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 9.25,
+      "y": 9.75
+    },
+    "grid_cell": {
+      "x": 18,
+      "y": 19
+    }
+  },
+  {
+    "species_id": "P24",
+    "german_name": "Günsel",
+    "english_name": "Ajuga (bugle)",
+    "strata": "Groundcover",
+    "calories_kcal": 0.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 21.25,
+      "y": 2.25
+    },
+    "grid_cell": {
+      "x": 42,
+      "y": 4
+    }
+  },
+  {
+    "species_id": "P22",
+    "german_name": "Erdbeere",
+    "english_name": "Strawberry",
+    "strata": "Groundcover",
+    "calories_kcal": 176.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 16.75,
+      "y": 38.25
+    },
+    "grid_cell": {
+      "x": 33,
+      "y": 76
+    }
+  },
+  {
+    "species_id": "P23",
+    "german_name": "Thymian kriechend",
+    "english_name": "Creeping thyme",
+    "strata": "Groundcover",
+    "calories_kcal": 0.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 36.75,
+      "y": 18.75
+    },
+    "grid_cell": {
+      "x": 73,
+      "y": 37
+    }
+  },
+  {
+    "species_id": "P27",
+    "german_name": "Brunnenkresse",
+    "english_name": "Watercress",
+    "strata": "Herb aquatic",
+    "calories_kcal": 137.5,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 20.25,
+      "y": 2.75
+    },
+    "grid_cell": {
+      "x": 40,
+      "y": 5
+    }
+  },
+  {
+    "species_id": "P27",
+    "german_name": "Brunnenkresse",
+    "english_name": "Watercress",
+    "strata": "Herb aquatic",
+    "calories_kcal": 137.5,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 14.75,
+      "y": 7.75
+    },
+    "grid_cell": {
+      "x": 29,
+      "y": 15
+    }
+  },
+  {
+    "species_id": "P40",
+    "german_name": "Pfeilkraut",
+    "english_name": "Arrowhead",
+    "strata": "Wetland herb geophyte",
+    "calories_kcal": 1000.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 33.25,
+      "y": 31.25
+    },
+    "grid_cell": {
+      "x": 66,
+      "y": 62
+    }
+  },
+  {
+    "species_id": "P41",
+    "german_name": "Lotos",
+    "english_name": "Lotus",
+    "strata": "Aquatic rhizome",
+    "calories_kcal": 4000.0,
+    "spacing_m": 1.0,
+    "position_m": {
+      "x": 39.75,
+      "y": 20.25
+    },
+    "grid_cell": {
+      "x": 79,
+      "y": 40
+    }
+  }
+]

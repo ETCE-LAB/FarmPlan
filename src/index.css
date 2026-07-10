@@ -1,0 +1,111 @@
+:root {
+  /* FarmPlan Color Palette mapped to your variable names */
+  --text: #4a4a4a;
+  --text-h: #1b5e20; /* FarmPlan Dark Green */
+  --bg: #f4f7f4;    /* Light Farm Background */
+  --border: #d1d9d1;
+  --code-bg: #f4f3ec;
+  --accent: #2e7d32; /* Primary Farm Green */
+  --accent-bg: rgba(46, 125, 50, 0.1);
+  --accent-border: rgba(46, 125, 50, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.05) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.03) 0 4px 6px -2px;
+
+  --sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --heading: 'Segoe UI', system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font-family: var(--sans);
+  font-size: 16px; /* Adjusted for better dashboard density */
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Minimal Dark Mode adjustments for Farm theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #b0b8b0;
+    --text-h: #ffffff;
+    --bg: #121412;
+    --border: #2d332d;
+    --code-bg: #1a1c1a;
+    --accent: #4caf50;
+    --accent-bg: rgba(76, 175, 80, 0.15);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  /* FIXED: Removed fixed width and margin: auto to fix the gap */
+  width: 100%; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: left; /* FIXED: Changed from center to left for dashboard layout */
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Custom student-style scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  padding: 0.2em 0.4em;
+  background: var(--code-bg);
+  border-radius: 4px;
+  color: var(--accent);
+}

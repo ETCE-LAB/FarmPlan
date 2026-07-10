@@ -1,0 +1,131 @@
+.theme-settings-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.theme-mode-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 16px;
+  background: color-mix(in srgb, var(--panel-bg) 88%, var(--farm-green-main) 12%);
+}
+
+.theme-mode-row p {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.theme-mode-actions {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.mode-btn {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  color: var(--text-main);
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.mode-btn.active {
+  border-color: var(--farm-green-main);
+  background: var(--farm-green-main);
+  color: #fff;
+}
+
+.theme-color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.theme-color-item {
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: var(--panel-bg);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theme-color-label {
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.theme-color-description {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  min-height: 30px;
+}
+
+.theme-color-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-color-input-row input[type='color'] {
+  width: 44px;
+  height: 36px;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.theme-color-input-row code {
+  background: color-mix(in srgb, var(--panel-bg) 84%, var(--farm-green-main) 16%);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 0.82rem;
+  padding: 6px 8px;
+}
+
+.theme-footer-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.theme-reset-btn {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  color: var(--text-main);
+  border-radius: 6px;
+  padding: 9px 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.theme-reset-btn:hover,
+.mode-btn:hover {
+  border-color: var(--farm-green-main);
+}
+
+@media (max-width: 760px) {
+  .theme-mode-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .theme-footer-actions {
+    justify-content: stretch;
+  }
+
+  .theme-reset-btn {
+    width: 100%;
+  }
+}

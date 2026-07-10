@@ -1,0 +1,5 @@
+numpy
+pandas
+tqdm
+xgboost>=3.3.0
+scikit-learn>=1.9.0

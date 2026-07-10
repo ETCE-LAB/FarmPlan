@@ -1,0 +1,48 @@
+{
+  "data_validation": {
+    "total_species": 110,
+    "species_by_category": {
+      "Tree": 38,
+      "Shrub": 31,
+      "Perennial": 41
+    },
+    "species_by_strata": {
+      "Emergent canopy": 9,
+      "High canopy": 10,
+      "Medium tree": 8,
+      "Low/medium tree": 8,
+      "Medium/High tree": 2,
+      "Low tree": 1,
+      "Shrub layer": 31,
+      "Climber/liana": 6,
+      "Tall herb geophyte": 2,
+      "Herb geophyte": 3,
+      "Tall herb": 9,
+      "Herb": 13,
+      "Groundcover": 4,
+      "Tall emergent wetland": 1,
+      "Herb aquatic": 1,
+      "Wetland herb geophyte": 1,
+      "Aquatic rhizome": 1
+    },
+    "calorie_coverage": "110/110",
+    "spacing_coverage": "106/110"
+  },
+  "demo_plan": {
+    "best_calorie_yield": 1099468.0,
+    "placements": 65,
+    "unique_species": 29,
+    "field_size_m": [
+      50,
+      50
+    ],
+    "constraint_violations": 67
+  },
+  "component_status": {
+    "phase1_data_validation": "COMPLETE [OK]",
+    "phase2_constraint_sampler": "COMPLETE [OK]",
+    "phase3_strata_optimizer": "COMPLETE [OK]",
+    "phase4_xgboost_scoring": "TRAINED (see models/)",
+    "phase5_end_to_end": "COMPLETE [OK]"
+  }
+}

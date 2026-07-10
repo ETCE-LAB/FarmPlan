@@ -1,0 +1,142 @@
+/* src/components/PlantImage.css */
+
+/* ── Shimmer animation ───────────────────────────────────────────────────── */
+@keyframes pi-shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+
+.pi-card-shimmer,
+.pi-panel-skeleton .pi-card-shimmer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    var(--panel-bg, #f1f5f1) 25%,
+    #d4e6d4 50%,
+    var(--panel-bg, #f1f5f1) 75%
+  );
+  background-size: 800px 100%;
+  animation: pi-shimmer 1.4s ease-in-out infinite;
+}
+
+/* ── CARD variant (DragDropCrops) ────────────────────────────────────────── */
+.pi-card-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background: var(--panel-bg, #f1f5f1);
+  border: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pi-card-loading {
+  /* shimmer child fills it */
+}
+
+.pi-card-no-img {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.pi-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 80px;
+}
+
+.pi-card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  border: 1.5px solid rgba(46,125,50,0.15);
+  flex-shrink: 0;
+}
+
+.pi-card-attribution {
+  font-size: 9px;
+  line-height: 1.3;
+  color: #94a3b8;
+  text-align: center;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pi-card-attribution a {
+  color: #64748b;
+  text-decoration: none;
+}
+.pi-card-attribution a:hover {
+  text-decoration: underline;
+  color: var(--farm-green-main, #2e7d32);
+}
+
+/* ── PANEL variant (PlantsPanel accordion) ───────────────────────────────── */
+.pi-panel-skeleton {
+  width: 220px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pi-panel-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.pi-panel-img {
+  width: 220px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  border: 1.5px solid rgba(46,125,50,0.15);
+}
+
+.pi-panel-attribution {
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.4;
+  max-width: 220px;
+}
+
+.pi-attr-label {
+  font-weight: 600;
+  color: #64748b;
+}
+
+.pi-panel-attribution a {
+  color: #64748b;
+  text-decoration: none;
+}
+.pi-panel-attribution a:hover {
+  color: var(--farm-green-main, #2e7d32);
+  text-decoration: underline;
+}
+
+/* Subtle pulse while the real image is still loading */
+.pi-card-img--loading {
+  opacity: 0.55;
+  animation: pi-shimmer 1.4s ease-in-out infinite;
+}
+
+/* Fallback panel image — slightly dimmed to signal it's a placeholder */
+.pi-panel-img--fallback {
+  opacity: 0.5;
+  filter: grayscale(30%);
+}

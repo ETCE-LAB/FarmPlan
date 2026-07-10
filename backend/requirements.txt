@@ -1,0 +1,7 @@
+Flask==3.1.2
+flask-cors==6.0.1
+pymongo==4.15.3
+python-dotenv==1.1.1
+rasterio
+shapely>=2.0.1
+numpy
