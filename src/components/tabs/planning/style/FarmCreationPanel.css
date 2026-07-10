@@ -435,8 +435,16 @@
 }
 
 .template-choice-btn:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
-  box-shadow: none;
+  background: #e2e8f0;
+  color: #94a3b8;
+  transform: none !important;
+}
+
+.template-choice-btn:disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .farm-detail-hint {

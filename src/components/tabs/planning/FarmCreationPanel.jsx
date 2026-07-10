@@ -398,15 +398,15 @@ function FarmCreationPanel({ onCreateFarm, farms, onUpdateFarm }) {
                   </span>
                 </div>
                 <div className="template-choice-actions">
-                  <button type="button" className="template-choice-btn" onClick={() => handleOpenTemplateDialog('create')}>
+                  <button type="button" className="template-choice-btn" disabled={!selectedField} onClick={() => handleOpenTemplateDialog('create')}>
                     {t('Create new template', 'Create new template')}
                   </button>
                   {(selectedField?.recipe || selectedFarm?.recipe) && (
-                    <button type="button" className="template-choice-btn secondary" onClick={() => handleOpenTemplateDialog('edit')}>
+                    <button type="button" className="template-choice-btn secondary" disabled={!selectedField} onClick={() => handleOpenTemplateDialog('edit')}>
                       {t('Edit template', 'Edit template')}
                     </button>
                   )}
-                  <button type="button" className="template-choice-btn third" onClick={() => handleOpenTemplateDialog('generate')}>
+                  <button type="button" className="template-choice-btn third" disabled={!selectedField} onClick={() => handleOpenTemplateDialog('generate')}>
                     {t('Generate template', 'Generate template')}
                   </button>
                 </div>
