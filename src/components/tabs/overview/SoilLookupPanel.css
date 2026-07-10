@@ -1,0 +1,127 @@
+.soil-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.soil-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.soil-form input,
+.soil-form select {
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 9px 10px;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  background: var(--input-bg);
+}
+
+.soil-form input::placeholder {
+  color: var(--text-muted);
+}
+
+.soil-service-select {
+  grid-column: span 2;
+}
+
+.soil-lookup-btn {
+  grid-column: span 2;
+  border: none;
+  background: var(--farm-green-main);
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.soil-lookup-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.soil-meta {
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.soil-error {
+  margin-top: 10px;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  border-radius: 4px;
+  color: var(--danger-text);
+  font-size: 0.8rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.soil-results-wrap {
+  margin-top: 12px;
+}
+
+.soil-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.soil-result-item {
+  border: 1px solid var(--panel-border);
+  border-left: 4px solid var(--farm-green-main);
+  border-radius: 4px;
+  padding: 10px;
+  background: var(--surface-alt-2);
+}
+
+.soil-result-item h4 {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: var(--farm-green-dark);
+}
+
+.soil-result-item p {
+  font-size: 0.78rem;
+  color: var(--text-main);
+}
+
+.soil-main-value {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.soil-attr-preview {
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

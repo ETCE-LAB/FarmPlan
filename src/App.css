@@ -1,0 +1,15 @@
+@import './styles/AppLayout.css';
+
+:root {
+  --farm-green-dark: #1b5e20;
+  --farm-green-main: #2e7d32;
+  --farm-green-soft: #f1f8f1;
+  --panel-border: #dce3dc;
+  --bg-main: #f8faf8;
+  --text-main: #2c312c;
+  --text-muted: #6a736a;
+}
+
+* {
+  box-sizing: border-box;
+}

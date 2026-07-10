@@ -1,0 +1,14 @@
+{
+  "predicted_calories": 1715616.0,
+  "exact_calories": 1715616.0,
+  "prediction_error": 0.0,
+  "error_pct": 0.0,
+  "placements": 52,
+  "species_count": 31,
+  "field_size_m": [
+    60.0,
+    40.0
+  ],
+  "polygon_pts": 7,
+  "spacing_violations": 0
+}

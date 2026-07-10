@@ -1,0 +1,147 @@
+.refresh-btn {
+  font-size: 0.7rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.table-toolbar {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.8fr) repeat(3, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.table-control {
+  width: 100%;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text-main);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+}
+
+.search-wrap {
+  display: flex;
+  gap: 8px;
+}
+
+.search-btn {
+  border: 1px solid var(--input-border);
+  background: var(--surface-alt);
+  color: var(--text-main);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.pagination-row {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-info {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.pagination-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-btn {
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text-main);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-count {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  background: var(--surface-alt);
+  padding: 14px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border: 1px solid var(--panel-border);
+}
+
+td {
+  padding: 14px;
+  font-size: 0.9rem;
+  border: 1px solid var(--panel-border);
+  color: var(--text-main);
+}
+
+tr:nth-child(even) {
+  background: var(--surface-alt-2);
+}
+
+.field-id {
+  font-weight: 700;
+  color: var(--farm-green-main);
+}
+
+.crop-name {
+  color: var(--text-muted);
+}
+
+.moisture-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.last-update {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 980px) {
+  .table-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
