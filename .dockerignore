@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+.git
+.vscode
+.idea
+.DS_Store
+*.log
+backend
+# Frontend imports optimizer/output/*.json (Template.jsx) - keep only those
+optimizer/*
+!optimizer/output
+optimizer/output/*
+!optimizer/output/*.json
+*.png
+*.jpg
